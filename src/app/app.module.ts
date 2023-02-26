@@ -9,7 +9,8 @@ import { StefamonComponent } from './modules/stefamon/stefamon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-import {MenubarModule} from 'primeng/menubar';
+import { MenubarModule } from 'primeng/menubar';
+import { JogadorService } from './services/jogador.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import {MenubarModule} from 'primeng/menubar';
     ButtonModule,
     MenubarModule,
   ],
-  providers: [],
+  providers: [JogadorService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
