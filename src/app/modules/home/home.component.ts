@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   public cadastrarJogador(): void {
     this.jogadorService.salvarJogador(this.jogador).subscribe(
-      success => console.log("Usuário cadastrado com sucesso!"),
+      data => console.log("Usuário cadastrado com sucesso!" + data),
       error => console.error(error));
   }
 
